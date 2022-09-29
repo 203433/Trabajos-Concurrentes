@@ -60,6 +60,7 @@ def comidaComensales(posicion):
             listaComensales[posicion].palillo = listaComensales[posicion].palillo + listaComensales[0].palillo
             listaComensales[0].palillo = 0
             print("El comensal",printPosicion,"tomó el palillo de su derecha y está comiendo")
+            time.sleep(5)
             listaComensales[0].comida = 0        
             listaComensales[0].palillo = 1
             print("El comensal", 1,"ha recuperado su palillo")
@@ -67,9 +68,11 @@ def comidaComensales(posicion):
             listaComensales[posicion].palillo = listaComensales[posicion].palillo + listaComensales[posicion+1].palillo
             listaComensales[posicion+1].palillo = 0
             print("El comensal",printPosicion,"tomó el palillo de su derecha y está comiendo")
+            time.sleep(5)
             listaComensales[posicion].comida = 0        
             listaComensales[posicion+1].palillo = 1
             print("El comensal",printPosicion+1,"ha recuperado su palillo")
+        
 
     comer(posicion)
 
@@ -87,7 +90,7 @@ class Hilo(threading.Thread):
         self.id=id
 
      def run(self):
-        mutex.acquire(blocking=True, timeout=3) #Inicializa semáforo , lo adquiere
+        mutex.acquire(blocking=True, timeout=65) #Inicializa semáforo , lo adquiere
         crito(self.id)
         mutex.release() #Libera un semáforo e incrementa la varibale
 
