@@ -1,42 +1,7 @@
 from random import random
 import threading
 import time
-# import requests
-# import threading
-# from pytube import YouTube
 
-# def comidaComensales():
-#     class comensal:
-#         comida=1
-#         palillo = 1
-
-#     p1 = comensal()
-#     p2 = comensal()
-#     p3 = comensal()
-#     p4 = comensal()
-#     p5 = comensal()
-#     p6 = comensal()
-#     p7 = comensal()
-#     p8 = comensal()
-#     listaComensales = [p1,p2,p3,p4,p5,p6,p7,p8]
-#     def comer():
-#         for l in listaComensales:
-#             if l.comida == 1:
-#                 l.palillo = l.palillo + l[l+1].palillo
-#                 if l.palillo == 2:
-#                     l.comida = 0
-#                     print("El comensal",listaComensales.index(l)+1,"esta comiendo")
-#             else:
-#                 print("No hay comida")
-
-    
-#     comer()
-
- 
-# if __name__ == '__main__':
-
-#     h1 = threading.Thread(target=comiendo)
-#     h1.start()
 
 
 def comidaComensales(posicion):
