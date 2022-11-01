@@ -1,9 +1,6 @@
 from random import random
 import threading
 import time
-
-
-
 def comidaComensales(posicion):
     class comensal:
         comida=1
